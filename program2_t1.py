@@ -6,10 +6,10 @@ Write a program that takes a number as input and prints ' vegetarian' if number 
 num=input("enter a number: ")
 if num.isdigit():
     num=int(num)
-    if(num%5==0):
+    if(num%10==0):
+        print("non-vegeterian")
+    elif(num%5==0):
         print("vegeterian")
-    elif(num%10==0):
-        print("non veg")
     elif(num%5==0 and num%10==0):
         print("vegan")
 else:
